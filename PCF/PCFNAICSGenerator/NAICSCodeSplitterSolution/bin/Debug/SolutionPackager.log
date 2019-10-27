@@ -1,0 +1,19 @@
+2019-10-17 20:45:55.545 - Info	
+Packing D:\PowerPlatform\pcf\NAICSGenerator\NAICSCodeSplitterSolution\obj\Debug\ to bin\Debug\NAICSCodeSplitterSolution.zip
+
+2019-10-17 20:45:55.561 - Info	Processing Component: Entities
+2019-10-17 20:45:55.565 - Info	Processing Component: Roles
+2019-10-17 20:45:55.569 - Info	Processing Component: Workflows
+2019-10-17 20:45:55.570 - Info	Processing Component: FieldSecurityProfiles
+2019-10-17 20:45:55.570 - Info	Processing Component: Templates
+2019-10-17 20:45:55.571 - Info	Processing Component: EntityMaps
+2019-10-17 20:45:55.571 - Info	Processing Component: EntityRelationships
+2019-10-17 20:45:55.578 - Info	Processing Component: OrganizationSettings
+2019-10-17 20:45:55.578 - Info	Processing Component: optionsets
+2019-10-17 20:45:55.578 - Info	Processing Component: CustomControls
+2019-10-17 20:45:55.591 - Info	 - PCFControls.PCFNaicsCodeSplitter
+2019-10-17 20:45:55.596 - Info	Processing Component: SolutionPluginAssemblies
+2019-10-17 20:45:55.598 - Info	Processing Component: EntityDataProviders
+2019-10-17 20:45:55.627 - Info	
+Unmanaged Pack complete.
+

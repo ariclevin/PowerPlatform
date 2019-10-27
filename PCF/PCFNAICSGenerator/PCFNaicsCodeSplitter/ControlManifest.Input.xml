@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PCFControls" constructor="PCFNaicsCodeSplitter" version="0.1.1" display-name-key="PCFNaicsCodeSplitter" description-key="PCFNaicsCodeSplitter description" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="NAICSCode" display-name-key="PCFNaicsCodeSplitter_NAICSCode" description-key="NAICS Code Field" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="NAICS2Control" display-name-key="PCFNaicsCodeSplitter_NAICS2Control" description-key="NAICS2 Control Field Name" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="NAICS4Control" display-name-key="PCFNaicsCodeSplitter_NAICS4Control" description-key="NAICS4 Control Field Name" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="NAICS6Control" display-name-key="PCFNaicsCodeSplitter_NAICS6Control" description-key="NAICS6 Control Field Name" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="pcfcontrols.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

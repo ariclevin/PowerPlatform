@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PCFControls" constructor="PCFCreditCardValidator" version="0.0.1" display-name-key="PCFControls.PCFCreditCardValidator" description-key="Credit Card Control for PCF" control-type="standard">
+    <property name="CreditCardNumber" display-name-key="PCFCreditCardValidator_CreditCardNumber" description-key="Credit Card Number field" of-type="SingleLine.Text" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+	    <css path="pcfcontrols.css" order="1" />
+    </resources>
+  </control>
+</manifest>

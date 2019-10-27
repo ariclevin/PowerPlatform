@@ -1,0 +1,38 @@
+2019-10-06 16:52:46.929 - Info	
+Packing D:\PowerPlatform\PCF\PCFCreditCardValidator\PCFCreditCardValidatorSolution\obj\Debug\ to bin\Debug\PCFCreditCardValidatorSolution.zip
+
+2019-10-06 16:52:46.945 - Info	Processing Component: Entities
+2019-10-06 16:52:46.945 - Info	Processing Component: Roles
+2019-10-06 16:52:46.960 - Info	Processing Component: Workflows
+2019-10-06 16:52:46.960 - Info	Processing Component: FieldSecurityProfiles
+2019-10-06 16:52:46.960 - Info	Processing Component: Templates
+2019-10-06 16:52:46.960 - Info	Processing Component: EntityMaps
+2019-10-06 16:52:46.960 - Info	Processing Component: EntityRelationships
+2019-10-06 16:52:46.960 - Info	Processing Component: OrganizationSettings
+2019-10-06 16:52:46.960 - Info	Processing Component: optionsets
+2019-10-06 16:52:46.960 - Info	Processing Component: CustomControls
+2019-10-06 16:52:46.976 - Info	 - PCFControls.PCFCreditCardValidator
+2019-10-06 16:52:46.976 - Info	Processing Component: SolutionPluginAssemblies
+2019-10-06 16:52:46.992 - Info	Processing Component: EntityDataProviders
+2019-10-06 16:52:47.023 - Info	
+Unmanaged Pack complete.
+
+2019-10-06 20:42:09.438 - Info	
+Packing D:\PowerPlatform\PCF\PCFCreditCardValidator\PCFCreditCardValidatorSolution\obj\Debug\ to bin\Debug\PCFCreditCardValidatorSolution.zip
+
+2019-10-06 20:42:09.453 - Info	Processing Component: Entities
+2019-10-06 20:42:09.457 - Info	Processing Component: Roles
+2019-10-06 20:42:09.461 - Info	Processing Component: Workflows
+2019-10-06 20:42:09.462 - Info	Processing Component: FieldSecurityProfiles
+2019-10-06 20:42:09.462 - Info	Processing Component: Templates
+2019-10-06 20:42:09.464 - Info	Processing Component: EntityMaps
+2019-10-06 20:42:09.464 - Info	Processing Component: EntityRelationships
+2019-10-06 20:42:09.470 - Info	Processing Component: OrganizationSettings
+2019-10-06 20:42:09.471 - Info	Processing Component: optionsets
+2019-10-06 20:42:09.471 - Info	Processing Component: CustomControls
+2019-10-06 20:42:09.485 - Info	 - PCFControls.PCFCreditCardValidator
+2019-10-06 20:42:09.491 - Info	Processing Component: SolutionPluginAssemblies
+2019-10-06 20:42:09.493 - Info	Processing Component: EntityDataProviders
+2019-10-06 20:42:09.519 - Info	
+Unmanaged Pack complete.
+
