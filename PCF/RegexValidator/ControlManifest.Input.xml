@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PCFControls" constructor="RegexValidator" version="0.0.4" display-name-key="RegexValidator" description-key="RegexValidator description" control-type="standard">
+
+<property name="CustomControl" display-name-key="Name of the Custom Control" 
+description-key="The name of the custom control" of-type="SingleLine.Text" usage="bound" required="true" />
+<property name="RegEx" display-name-key="Regular Expression" 
+description-key="Regular Expression" of-type="SingleLine.Text" usage="input" required="true" />
+<property name="DefaultErrorMessage" display-name-key="Default Error Message" 
+description-key="Default Error Message" of-type="SingleLine.Text" usage="input" required="false" />
+  
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="pcfcontrols.css" order="1" />
+    </resources>
+  </control>
+</manifest>

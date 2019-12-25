@@ -1,0 +1,57 @@
+.pcfinputcontrol {
+    border-color: transparent;
+    padding: 0px 0.5rem 0.5rem 0px;
+    color: rgb(0,0,0);
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 2.5rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-overflow: ellipsis;
+    width: 100%
+}
+
+.pcfinputcontrol:hover, .pcfinputcontrol:active {
+    border-color: black;
+}
+
+.pcfimagecontrol {
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.pcferrorcontroldiv
+{
+  display: inline-flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgba(191, 9, 0, 0.075)
+}
+
+.pcferrorcontrolimage
+{
+  font-family:  "Dyn CRM Symbol", "Segoe MDL2 Assets";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgb(191, 9, 0);
+  padding-right: 0.5rem;
+}
+
+.pcferrorcontrollabel
+{
+  display: initial;
+  color: rgb(191, 9, 0);
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI";
+  line-height: 2rem;
+  word-break: break-word;
+}
+
