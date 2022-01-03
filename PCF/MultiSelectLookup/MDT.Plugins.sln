@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDT.Plugins", "MDT.Plugins.csproj", "{35ACE839-B666-4DB2-83A6-87C39258FD94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35ACE839-B666-4DB2-83A6-87C39258FD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35ACE839-B666-4DB2-83A6-87C39258FD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35ACE839-B666-4DB2-83A6-87C39258FD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35ACE839-B666-4DB2-83A6-87C39258FD94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6C4FFE6-ACAD-474C-9D7B-789FF374E742}
+	EndGlobalSection
+EndGlobal
