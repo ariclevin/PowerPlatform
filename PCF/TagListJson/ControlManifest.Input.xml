@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="MDT.VirtualControl.Core" constructor="TagListJson" version="0.1.1" display-name-key="TagListJson" description-key="TagListJson description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="jsonAttribute" display-name-key="JSON Attribute" description-key="JSON Attribute" of-type-group="TextGroup" usage="bound" required="true"/>
+    <type-group name="TextGroup">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.TextArea</type>
+      <type>Multiple</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/TagListJson.css" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <resx path="strings/TagListJson.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

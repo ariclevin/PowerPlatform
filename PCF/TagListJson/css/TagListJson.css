@@ -1,0 +1,33 @@
+.tagListContainer
+{
+    word-wrap: true;
+}
+
+.jsonElementInfo, .jsonElementWarning, .jsonElementError
+{
+    padding: 4px;
+    margin: 1px;    
+    border: none;
+    outline: none;
+    font-family: Segoe UI;
+    font-size: 12px;    
+}
+
+.jsonElementInfo
+{
+    color: black;
+    background: lightgrey;
+}
+
+.jsonElementWarning
+{
+    color: black;
+    background: orange;
+}
+
+.jsonElementError
+{
+    color: white;
+    background: red;
+    font-weight: bold;    
+}
