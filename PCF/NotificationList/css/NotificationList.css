@@ -1,0 +1,65 @@
+.fullWidth
+{
+    width: 100%;
+}
+
+.notificationHeader
+{
+    flex-wrap: wrap;
+}
+
+.notificationTitle
+{
+    color: darkblue;
+    padding: 4px;
+    margin: 1px;    
+    border: none;
+    outline: none;
+    font-family: Segoe UI;
+    font-size: 16px;  
+    font-weight: bolder;  
+    text-align: left; 
+    /* float:left;  */
+}
+
+.notificationIcons
+{
+    float:right;  
+    vertical-align: text-top;
+}
+
+.notificationBody
+{
+    color: darkblue;
+    padding: 4px;
+    margin: 1px;    
+    border: none;
+    outline: none;
+    font-family: Segoe UI;
+    font-size: 12px;    
+    text-align: left;   
+}
+
+.notificationDate
+{
+    color: darkblue;
+    padding: 4px;
+    margin: 1px;    
+    border: none;
+    outline: none;
+    font-family: Segoe UI;
+    font-size: 10px; 
+    text-align: left;   
+}
+
+.notificationAction
+{
+    color: darkblue;
+    padding: 4px;
+    margin: 1px;    
+    border: none;
+    outline: none;
+    font-family: Segoe UI;
+    font-size: 10px;    
+    text-align: right;
+}
