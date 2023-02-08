@@ -10,3 +10,6 @@ For more information about this solution and components, you can read the follow
 
 https://www.ariclevin.com/powerapps/post/in-app-notifications-vs-external-notifications/
 https://www.ariclevin.com/powerapps/post/visualizing-the-notifications/
+
+
+![image](https://user-images.githubusercontent.com/33911954/217436693-4a4ca906-ae0d-4441-9726-c3834001f130.png)
