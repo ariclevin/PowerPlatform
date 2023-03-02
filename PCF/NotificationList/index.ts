@@ -5,7 +5,7 @@ import * as React from "react";
 export class NotificationList implements ComponentFramework.ReactControl<IInputs, IOutputs> {
     private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
     private notifyOutputChanged: () => void;
-    private _context: ComponentFramework.Context<IInputs>;
+    public _context: ComponentFramework.Context<IInputs>;
     /**
      * Empty constructor.
      */
@@ -37,7 +37,6 @@ export class NotificationList implements ComponentFramework.ReactControl<IInputs
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
         const props: INotificationListProps = { dataset: context.parameters.notificationDataSet, 
                                                 publisherPrefix: context.parameters.publisherPrefix.raw!,
-                                                loadMore: this.loadMoreRecords,
                                                 openRecord: this.openRecord,
                                                 hideRecord: this.deactivateRecord,
                                                 resendNotifications: this.resendRecordNotifications,
@@ -74,6 +73,8 @@ export class NotificationList implements ComponentFramework.ReactControl<IInputs
 	private openRecord(id:string){
         console.log("Open Record: " + id);
 		let entityName:string = this._context.parameters.notificationDataSet.getTargetEntityType();
+        // let entityName:string = this.dataset.getTargetEntityType();
+        console.log("Entity Name: " + entityName);
 
 		let entityFormOptions = {
 			entityName:  entityName,
@@ -82,16 +83,13 @@ export class NotificationList implements ComponentFramework.ReactControl<IInputs
 		
 		this._context.navigation.openForm(entityFormOptions);
 	}    
-
-	private loadMoreRecords(){
-		this._context.parameters.notificationDataSet.paging.loadNextPage();
-	}
-    
+   
     private deactivateRecord(id:string)
     {
         console.log("Deactivate Record: " + id);
-
         let entityName:string = this._context.parameters.notificationDataSet.getTargetEntityType();
+        console.log("Entity Name: " + entityName);
+
         let data = 
         {
             "statecode": 1,
@@ -113,8 +111,9 @@ export class NotificationList implements ComponentFramework.ReactControl<IInputs
     private resendRecordNotifications(id:string)
     {
         console.log("Resend Record: " + id);
-
         let entityName:string = this._context.parameters.notificationDataSet.getTargetEntityType();
+        console.log("Entity Name: " + entityName);
+
         let fieldName = this._context.parameters.publisherPrefix.raw! + "fieldName";
         let data = 
         {
