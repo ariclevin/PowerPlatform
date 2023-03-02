@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="MDT.VirtualControl.Core" constructor="NotificationList" version="0.0.1" display-name-key="NotificationList" description-key="NotificationList description" control-type="virtual" >
+  <control namespace="MDT.VirtualControl.Core" constructor="NotificationList" version="0.0.6" display-name-key="NotificationList" description-key="NotificationList description" control-type="virtual" >
     <external-service-usage enabled="false">
     </external-service-usage>
     <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
-    <data-set name="notificationDataSet" display-name-key="Dataset_Notification_History" cds-data-set-options="displayCommandBar:true;displayViewSelector:true">
+    <data-set name="notificationDataSet" display-name-key="Dataset_Notification_History" cds-data-set-options="displayCommandBar:false;displayViewSelector:false;displayQuickFind:false">
     </data-set>
     <property name="publisherPrefix" display-name-key="Publisher_Prefix_Display_Key" description-key="Publisher_Prefix_Desc_Key" of-type="SingleLine.Text" usage="input" required="true" />
     <resources>
