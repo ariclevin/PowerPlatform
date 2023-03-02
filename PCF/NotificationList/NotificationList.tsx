@@ -18,7 +18,6 @@ export interface INotificationItem
 export interface INotificationListProps {
   dataset: DataSet,
   publisherPrefix: string | null,
-  loadMore: Function,
   openRecord: Function,
   hideRecord: Function,
   resendNotifications: Function,
@@ -34,7 +33,7 @@ export interface IActionButtonProps
 // Styles definition
 const stackStyles: IStackStyles = {
   root: {
-    background: DefaultPalette.neutralLight,
+    background: DefaultPalette.themeLighterAlt,
     // height: 200,
     width: "100%"
   },
@@ -42,7 +41,7 @@ const stackStyles: IStackStyles = {
 const stackItemStyles: IStackItemStyles = {
   root: {
     alignItems: 'left',
-    background: DefaultPalette.neutralLighter,
+    background: DefaultPalette.whiteTranslucent40,
     color: DefaultPalette.blueDark,
     // display: 'flex',
     justifyContent: 'left',
@@ -52,7 +51,7 @@ const stackItemStyles: IStackItemStyles = {
 const stackItemActionStyles: IStackItemStyles = {
   root: {
     alignItems: 'right',
-    background: DefaultPalette.neutralLight,
+    background: DefaultPalette.whiteTranslucent40,
     color: DefaultPalette.blueDark,
     justifyContent: 'right',
     borderBottom: 1,
@@ -75,30 +74,6 @@ const itemAlignmentsStackTokens: IStackTokens = {
 const OpenIcon: IIconProps = { iconName: 'OpenInNewTab' };
 const SendIcon: IIconProps = { iconName: 'Send' };
 const HideIcon: IIconProps = { iconName: 'Hide' };
-const ActionIcon: IIconProps = { iconName: 'SetAction' };
-
-/*
-const menuProps: IContextualMenuProps = {
-  items: [
-    {
-      key: 'edit',
-      text: 'Open Notification',
-      iconProps: { iconName: 'OpenInNewTab' },
-    },
-    {
-      key: 'resentNotification',
-      text: 'Resend Notifcation',
-      iconProps: { iconName: 'Send' },
-    },
-    {
-      key: 'hideNotification',
-      text: 'Hide Notification',
-      iconProps: { iconName: 'Hide' },
-    },
-  ],
-  directionalHintFixed: true,
-};
-*/
 
 const calloutProps = { gapSpace: 0 };
 const hostStyles: Partial<ITooltipHostStyles> = { root: { display: 'inline-block' } };
@@ -126,7 +101,10 @@ export class NotificationListControl extends React.Component<INotificationListPr
         <Stack.Item  align='stretch' key={item.notificationId} styles={stackItemStyles}>
               <div className="notificationHeader">
                 <div className="notificationTitle">{item.notificationTitle}</div>  
-                <div className="notificationIcons">
+              </div>
+              <div className="notificationBody">{item.notificationBody}</div>
+              <div className="notificationDate">{item.notificationDate}</div>
+              <div className="notificationIcons">
                   <TooltipHost content="Open Notification" id='openNotification' calloutProps={calloutProps} styles={hostStyles} >
                     <IconButton iconProps={OpenIcon} aria-label="Open Notification" onClick={() => this.props.openRecord(item.notificationId)} />
                   </TooltipHost>            
@@ -137,10 +115,7 @@ export class NotificationListControl extends React.Component<INotificationListPr
                     <IconButton iconProps={HideIcon} aria-label="Hide Notification" onClick={() => this.props.hideRecord(item.notificationId)} />
                   </TooltipHost> 
                 </div> 
-              </div>
-              <div className="notificationBody">{item.notificationBody}</div>
-              <div className="notificationDate">{item.notificationDate}</div>
-          </Stack.Item>
+            </Stack.Item>
           </Stack>
         ))
         }
